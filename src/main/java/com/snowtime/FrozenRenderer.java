@@ -37,6 +37,7 @@ public class FrozenRenderer {
         }
 
         int color = off ? 0xFFA0A0A0 : hov ? 0xFFFFFFFF : 0xFFE8F8FF;
-        b.drawMessage(c, MinecraftClient.getInstance().textRenderer, color);
+        c.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
+        b.getMessage(), x + w / 2, y + (h - 8) / 2, color);
     }
 }
